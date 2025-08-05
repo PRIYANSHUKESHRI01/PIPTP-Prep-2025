@@ -1,0 +1,11 @@
+FUNCTION fun(w, x)
+    SET y = 0
+    IF (x MOD w == 0) OR (w MOD x == 0) THEN
+        y = y + 1
+    ELSE
+        y = y + 10
+    END IF
+    PRINT y
+END FUNCTION
+
+CALL fun(40, 4)
